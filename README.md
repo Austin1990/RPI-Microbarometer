@@ -1,5 +1,5 @@
 # RPI-Microbarometer
-Low cost microbarometer station, 1Pa resolution. RPi plots and stores data, uploading data to remote website
+Low cost microbarometer station, 1Pa resolution.
 This project complements our infrasound monitor. A microbarometer with approx 1Pa resolution and 0.4Pa noise threshold 
 based on the digital ICP-10125 i2c enabled absolute pressure sensor. 
 
