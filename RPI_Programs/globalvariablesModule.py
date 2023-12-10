@@ -4,7 +4,7 @@ from icp10125 import ICP10125, ULTRA_LOW_NOISE
 import os
 
 device = ICP10125()
-home_directory = '/home/ian/GeoPhysics'
+home_directory = '/home/geophysics/station'
 #os.chdir('/home/pi/microbarometer')  # replace with home directory of application
 
 # below are station parameters for your station. see SEED manual for

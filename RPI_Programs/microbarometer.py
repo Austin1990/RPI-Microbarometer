@@ -17,13 +17,13 @@ import time
 import smbus
 from threading import Thread
 from geostationModules import *
+#from globalvariablesModule import *
 from obspy.signal.filter import bandpass, lowpass, highpass
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Global Variables (actually constants)
 
 device = ICP10125()
-
 os.chdir(home_directory)
 
 # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -101,6 +101,7 @@ def main():
 
         try:
             tmpReadings = read_from_sensor()
+            print(tmpReadings)
             pressure = tmpReadings[0]
             temperature = tmpReadings[1]
             daily_readings[n_daily_readings, 0] = pressure
